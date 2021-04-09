@@ -1,6 +1,6 @@
 # g5-volunteer-server
 
-The server for the G5 volunteer tracker. This track volunteer opportunites, who volunteered and for how long.
+The server for the G5 volunteer tracker. This tracks volunteer opportunities, who volunteered, and for how long.
 
 ## Getting Started
 

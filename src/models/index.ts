@@ -1,6 +1,7 @@
 import * as sequelize from 'sequelize';
-import {UserFactory} from "./user-model";
+import {UserFactory} from "./user";
 import {OrganizationFactory} from "./orginzation";
+import {VolunteerFactory} from './volunteer'
 const {
   DATABASE_URL: dbUrl
 } = process.env
@@ -12,6 +13,8 @@ export const dbConfig = new sequelize.Sequelize(dbUrl);
 export const User = UserFactory(dbConfig)
 
 // THIS ONES ARE THE ONES YOU NEED TO USE ON YOUR CONTROLLERS
-export const orgnizations = OrganizationFactory(dbConfig)
-
+export const Orgnization = OrganizationFactory(dbConfig)
+export const Volunteer = VolunteerFactory(dbConfig)
+Volunteer.belongsTo(User)
+Volunteer.belongsTo(Orgnization)
 // User.hasMany(Skills);
