@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to followin installed before you can get this running locally
+You will need to following installed before you can get this running locally
 
 - Postgres - [Easiest way for Mac](https://postgresapp.com/)
 - Node js - Install it with [NVM](https://formulae.brew.sh/formula/nvm)
